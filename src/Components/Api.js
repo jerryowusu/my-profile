@@ -3,14 +3,14 @@ import axios from 'axios'
 
 
 const Api = () => {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState({});
   
   useEffect(() => {
     axios 
-      .get("https://jsonplaceholder.typicode.com/posts/1")
+      .get("https://api.adviceslip.com/advice")
       .then((result) => {
-        console.log(result.data)
-        setPosts(result.data)
+        console.log(result)
+        setPosts(result)
       })
       .catch((error) => console.log(error));
   }, [])
@@ -20,7 +20,15 @@ const Api = () => {
 
   return (
     <div>
-      <p className="advice">{posts.body}</p>
+      <h1>hello</h1>
+      {posts.data.slip.advice}
+      {/* {
+        posts.map((post) => (
+          <div className="advice" key={post.id} >
+            <p>{post.slip.advice}</p>
+          </div>
+        ))
+      } */}
     </div>
   )
 }
