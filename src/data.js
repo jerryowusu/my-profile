@@ -7,7 +7,7 @@ const services = [
     {
         Icon: RiComputerLine,
        title: 'Front-end Dev',
-       about: 'I can build a beautiful and scalable SPA and websites using <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>React</b>, <b>NextJs</b>, <b>Ruby on Rails</b> etc',
+       about: 'I can build a beautiful and scalable SPA and websites using <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>React</b>, <b>NextJs</b>, <>Ruby</b> <b>Ruby on Rails</b> etc',
    },
    {
        Icon: FaServer,
